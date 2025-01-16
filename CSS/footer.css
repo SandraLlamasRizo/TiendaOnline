@@ -1,0 +1,12 @@
+footer {
+    margin-left: 10%;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.redes {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
