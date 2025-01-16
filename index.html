@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Onlline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./JS/data.js"></script>
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <section class="logo">
+            <img src="https://farmaciaveterinaria.es/img/logo-1719396112.jpg" alt="">
+        </section>
+        <section class="search">
+            <input type="text" id="search" placeholder="Buscar item...">
+            <button class="js-search"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+        </section>
+        <section>
+            <ul class="menu">
+                <li class="user"><i class="fa-solid fa-user"></i>Iniciar sesión</li>
+                <li>Ayuda</li>
+                <li class="carrito js-carrito"><i class="fa-solid fa-cart-shopping"></i>Carrito</li>
+            </ul>
+        </section>
     </header>
     <main>
 
