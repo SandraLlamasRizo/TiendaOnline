@@ -15,4 +15,6 @@
 .js-carrito ul {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
+

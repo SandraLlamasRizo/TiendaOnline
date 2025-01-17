@@ -62,4 +62,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 10px;
+    position: relative;
+    top: 100px;
+    z-index: -1;
 }
