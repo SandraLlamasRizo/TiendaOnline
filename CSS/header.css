@@ -66,6 +66,9 @@ header {
     flex-direction: row;
     gap: 5px;
     align-items: center;
+    text-decoration: none;
+    color: white;
+    
 }
 
 .numero {

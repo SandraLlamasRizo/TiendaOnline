@@ -22,23 +22,6 @@
     object-fit: cover;
 }
 
-.carta h3 {
-    margin: 5px;
-    font-size: 16px;
-    font-weight: bolder;
-}
-
-.carta p {
-    margin: 5px;
-    font-size: 14px;
-    font-weight: light;
-}
-
-.carta h6 {
-    margin: 5px;
-    font-size: 14px;
-    font-weight: bold;
-}
 
 .carta button {
     margin: 5px;

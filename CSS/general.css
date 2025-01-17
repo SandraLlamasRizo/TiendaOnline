@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+
+h3 {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+p {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: light;
+}
+
+h6 {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+

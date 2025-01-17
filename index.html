@@ -19,37 +19,47 @@
         </section>
         <section>
             <ul class="menu">
-                <li class="user"><i class="fa-solid fa-user"></i>Iniciar sesión</li>
+                <li ><a href="" class="user"><i class="fa-solid fa-user"></i>Iniciar sesión</a></li>
                 <li>Ayuda</li>
-                <li class="carrito js-carrito-icono"><i class="fa-solid fa-cart-shopping"></i>Carrito<span class="numero">(0)</span></li>
+                <li ><a href="" class="carrito js-carrito-icono"><i class="fa-solid fa-cart-shopping"></i>Carrito<span class="numero">(0)</span></a></li>
             </ul>
         </section>
     </header>
     <main>
-        <div class="js-carrito">
+        <section class="hidden js-carrito">
             <ul>
                 <li>Producto</li>
                 <li>Precio</li>
                 <li>Cantidad</li>
                 <li>Total</li>
             </ul>
-            <section>
-                <article>
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <div>
-                        <h3></h3>
-
-                    </div>
-                </article>
-            </section>
-            <section>
+            <article class="js-item">
+                  <figure class="imagenCarrito">
+                     <img src="https://mardemarbarcelona.com/cdn/shop/files/pantalon-beige-de-pana_460x.jpg?v=1734636232" alt="">
+                  </figure>
+                  <div class="descripcion">
+                    <h3>Pantalón pana</h3>
+                    <p>Pantalón de pana beige straight</p>
+                  </div>
+                  <div class="precioItem">
+                    <h6>22,99€</h6>
+                  </div>
+                  <div class="cantidad">
+                    <button class="reducirCantidad">-</button>
+                    <p>1</p>
+                    <button class="augmentarCantidad">+</button>
+                    <button class="eliminar">Eliminar</button>
+                 </div>
+                  <div class="totalItem">
+                     total item
+                 </div>
+            </article>
+            <section class="totalCarrito">
                 <p class="js-total">Total: <span></span></p>
-                <button>Vaciar carrito</button>
-                <button>Comprar</button>
+                <button class="vaciar">Vaciar carrito</button>
+                <button class="comprar">Comprar</button>
             </section>
-        </div>
+        </section>
         <div class="grid">
             <section class="carta">
                 <figure>
