@@ -2,6 +2,8 @@ footer {
     margin-left: 10%;
     width: 400px;
     margin-bottom: 20px;
+    position: relative;
+    margin-top: 100px
 }
 
 .redes {
@@ -9,4 +11,5 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    
 }
