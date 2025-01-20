@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
     right: 0px;
     top: 100px;
     padding: 10px;
@@ -24,6 +25,8 @@
 }
 
 .js-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: grid;
     grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
     align-items: center;
@@ -73,4 +76,8 @@
     .comprar {
         grid-column: 2/4;
     }
+}
+
+.hidden {
+    display: none;
 }
