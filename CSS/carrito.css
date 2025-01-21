@@ -1,15 +1,18 @@
-
-
 .js-carrito {
     width: 500px;
-    background-color: rgb(235, 240, 254);
+    height: 400px;
+    background-color: rgb(237, 235, 235);
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     right: 0px;
     top: 100px;
     padding: 10px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: solid 1px gray;
 }
 
 .js-carrito ul {
@@ -76,6 +79,14 @@
     .comprar {
         grid-column: 2/4;
     }
+}
+
+.js-carrito button{
+    background-color: rgb(254,212,227);
+    padding: 5px;
+    color: black;
+    border: solid 1px gray;
+    border-radius: 10px;
 }
 
 .hidden {

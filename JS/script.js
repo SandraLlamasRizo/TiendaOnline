@@ -5,6 +5,8 @@ const sectionProductos = document.querySelector('.js-productosCarrito');
 const numeroCarrito = document.querySelector('.numero');
 const totalCarrito = document.querySelector('.js-total');
 const vaciarCarrito = document.querySelector('.js-vaciar');
+const search = document.querySelector('.js-searchInput');
+const btnSearch = document.querySelector('.js-search');
 
 let carritoProductos = [];
 
@@ -77,8 +79,6 @@ const calcularNumeroItems = (array) => {
 
 //pintar productos carrito
 
-
-
 const pintarUnCarrito = (producto) => {
     const article = document.createElement('article');
     article.classList.add('js-item');
@@ -93,9 +93,9 @@ const pintarUnCarrito = (producto) => {
     h3.classList.add('descripcion');
     h3.textContent = producto.nombre;
 
-    const h6 = document.createElement('h6');
-    h6.classList.add('precioItem');
-    h6.textContent = `${producto.precio}€`
+    const pPrecio = document.createElement('p');
+    pPrecio.classList.add('precioItem');
+    pPrecio.textContent = `${producto.precio}€`
 
     const divCantidad = document.createElement('div');
     divCantidad.classList.add('cantidad');
@@ -124,15 +124,15 @@ const pintarUnCarrito = (producto) => {
     divCantidad.appendChild(buttonMas);
     divCantidad.appendChild(buttonEliminar);
 
-    const ptotal = document.createElement('p');
+    const h6total = document.createElement('h6');
     const precioTotal = producto.precio * producto.cantidad;
-    ptotal.textContent = `${precioTotal.toFixed(2)}€`;
+    h6total.textContent = `${precioTotal.toFixed(2)}€`;
 
     article.appendChild(figure);
     article.appendChild(h3);
-    article.appendChild(h6);
+    article.appendChild(pPrecio);
     article.appendChild(divCantidad);
-    article.appendChild(ptotal);
+    article.appendChild(h6total);
 
     sectionProductos.appendChild(article);
 }
@@ -206,12 +206,23 @@ const pintarProductos = (arrayProductos) => {
     }
 }
 
+//handleSearch
+
+const handleSearch = (event) => {
+    
+    const copyProducts = [...productos];
+    const searchProducts = copyProducts.filter((item) => item.nombre.toLowerCase().includes(search.value));
+    gridProductos.innerHTML = '';
+    pintarProductos(searchProducts);
+}
+
 
 //cargar DOM
 const initial = () => {
     menuCarrito();
     pintarProductos(productos);
     vaciarCarrito.addEventListener('click', handleVaciar);
+    btnSearch.addEventListener('click', handleSearch)
 }
 
 initial();
