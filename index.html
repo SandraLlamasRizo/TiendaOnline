@@ -10,22 +10,26 @@
 </head>
 <body>
     <header class="header">
+        <!--logo-->
         <section class="logo">
             <img src="./images/elLogo.jpg" alt="logo">
         </section>
+        <!--buscador-->
         <section class="search">
             <input class="js-searchInput" type="text" id="search" placeholder="Buscar producto...">
             <button class="js-search"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
         </section>
+        <!--menu-->
         <section>
             <ul class="menu">
                 <li ><a href="" class="user"><i class="fa-solid fa-user"></i>Iniciar sesión</a></li>
                 <li>Ayuda</li>
-                <li ><a href="" class="carrito js-carrito-icono"><i class="fa-solid fa-cart-shopping"></i>Carrito<span class="numero">(0)</span></a></li>
+                <li ><a href="" class="carrito js-carrito-icono"><i class="fa-solid fa-cart-shopping"></i>Carrito<span class="js-numero">(0)</span></a></li>
             </ul>
         </section>
     </header>
     <main>
+        <!--carrito-->
         <section class="hidden js-carrito">
             <ul>
                 <li>Producto</li>
@@ -40,9 +44,8 @@
                 <button class="comprar">Comprar</button>
             </section>
         </section>
-        <div class="grid js-productos">
-            
-        </div>
+        <!--productos-->
+        <section class="grid js-productos"></section>
     </main>
     <footer>
         <h5>Encuentranos en</h5>
@@ -52,7 +55,6 @@
             <li><i class="fa-brands fa-twitter"></i></li>
         </ul>
     </footer>
-    
     <script src="./JS/script.js"></script>
 </body>
 </html>
